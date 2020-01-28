@@ -33,12 +33,12 @@ my @textFiles = (
 
 my @rssFeeds = (
 #	'www.reddit.com/.rss',
-	'articlefeeds.nasdaq.com/nasdaq/symbols?symbol=SPOK',
+#	'articlefeeds.nasdaq.com/nasdaq/symbols?symbol=SPOK',
 	'www.startribune.com/rss/?sf=1&s=/',
 #	'www.marketwatch.com/rss/marketpulse',
 	'rss.slashdot.org/Slashdot/slashdot',
 	'www.startribune.com/sports/index.rss2',
-	'w1.weather.gov/xml/current_obs/KFCM.rss'#,
+#	'w1.weather.gov/xml/current_obs/KFCM.rss'#,
 #	'feeds.nytimes.com/nyt/rss/Technology',
 #	'www.kansascity.com/news/index.xml'
 );

@@ -6,8 +6,9 @@
 # Output can include, but is not limited to:
 # 1. Random lines from a text file
 # 2. RSS feeds
-# 3. DB SELECT results (not implemented)
-# 4. Stock Quotes
+# 3. Weather reports
+# 4. DB SELECT results (not implemented)
+# 5. Stock Quotes
 use strict;
 use warnings;
 use XML::RSS::Parser;

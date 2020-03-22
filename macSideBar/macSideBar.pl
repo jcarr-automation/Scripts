@@ -39,6 +39,8 @@ my @rssFeeds = (
 #	'www.marketwatch.com/rss/marketpulse',
 	'rss.slashdot.org/Slashdot/slashdot',
 	'www.startribune.com/sports/index.rss2',
+#	'www.health.state.mn.us/news/rss/news.xml',
+#	'kuathletics.com/rss.aspx?path=mbball'
 #	'w1.weather.gov/xml/current_obs/KFCM.rss'#,
 #	'feeds.nytimes.com/nyt/rss/Technology',
 #	'www.kansascity.com/news/index.xml'

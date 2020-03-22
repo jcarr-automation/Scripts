@@ -12,6 +12,7 @@ Output can include, but is not limited to:
 
 This comes pre-loaded with the following quote files:
 
-1. 
-2. 
-3. 
+1. The Programmers File of Good Advice (MJDsFileOfGoodAdviceForSidebar.txt)
+2. QA Bumper Stickers (qabumperstickers.txt)
+3. The Art of War (suntzu.txt)
+4. Mark Twain quotes (twainquotes.txt)

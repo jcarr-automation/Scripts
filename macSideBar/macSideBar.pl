@@ -17,6 +17,10 @@ use WWW::Mechanize;
 use Term::ProgressBar;
 my $mech = WWW::Mechanize->new();
 
+# !! NOTE 10/29/2020 - if you get the error:
+#    "Can't verify SSL peers without knowing which Certificate Authorities to trust"
+# !! You need to install the module: Mozilla::CA
+
 $|=1;
 
 # Set my PROXY user credentials!!

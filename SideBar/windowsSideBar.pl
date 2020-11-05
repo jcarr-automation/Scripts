@@ -62,7 +62,7 @@ while(1){
 		while(<TX>){
 			push(@t, $_) if $_ =~ /\w/
 		}
-		close TX;		
+		close TX;
 		Type($t[int(rand(@t))]."\n");
 	}
 	
@@ -151,7 +151,7 @@ while(1){
 			# Clean the text up
 			$Rss{$feed}{$item}{TEXT} =~ s/[^\w\s'"-:;!,\.\?\$\%\@]//g;
 			$Rss{$feed}{$item}{TEXT} =~ s/\n//g;
-			
+
 			print $Rss{$feed}{$item}{TEXT}."\n\n";
 		}
 	}

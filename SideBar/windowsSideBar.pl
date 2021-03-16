@@ -15,6 +15,7 @@ use XML::RSS::Parser;
 use FileHandle;
 use WWW::Mechanize;
 use Term::ProgressBar;
+use DateTime;
 my $mech = WWW::Mechanize->new();
 
 # !! NOTE 10/29/2020 - if you get the error:
@@ -130,10 +131,13 @@ while(1){
 	# RSS Display
 	next unless %Rss;
 	foreach my $feed (keys %Rss) {
+		my $dt = DateTime->now;
+		$dt->set_time_zone('America/Chicago');
+		my $time = $dt->hms;
 		sleep(1);
 		Type(
 			$feed.
-			" ($Rss{$feed}{COUNT})".
+			" ($Rss{$feed}{COUNT}) ".$time." ".
 			'.....'."\n\n"
 		);
 		sleep(1);

@@ -16,7 +16,7 @@ use FileHandle;
 use WWW::Mechanize;
 use Term::ProgressBar;
 use Term::ANSIColor;
-use DateTime;
+use POSIX qw( strftime );
 my $mech = WWW::Mechanize->new();
 
 # !! NOTE 10/29/2020 - if you get the error:
@@ -134,9 +134,8 @@ while(1){
 	# RSS Display
 	next unless %Rss;
 	foreach my $feed (keys %Rss) {
-		my $dt = DateTime->now;
-		$dt->set_time_zone('America/Chicago');
-		my $time = $dt->hms;
+		my $now = time;
+		my $time = strftime("%l:%M %p", localtime($now));
 		sleep(1);
 		print color('magenta');
 		Type(
